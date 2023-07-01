@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Profile Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="xyz.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<h2><i><b>
+Welcome to our Website<br>
+Name:
+<script>
+document.write(localStorage.getItem("name"));
+</script><br>
+Email:
+<script>
+document.write(localStorage.getItem("email"));
+</script><br>
+</b></i></h2>
+<button type="button" id="btnlogout" class="btn btn-info" onclick="Logout()">Log Out</button>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+function Logout()
+{
+window.location.href="Login.html"
+}
+</script>
+</html>
